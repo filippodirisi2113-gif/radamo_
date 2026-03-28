@@ -1,0 +1,757 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menù della Pizzeria Friggitoria Radamò — Antipasti, Pizze Napoletane, Fritti, Dessert e Bevande. Prezzi onesti, qualità eccellente.">
+  <title>Menù — Radamò Pizzeria Friggitoria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="navbar__logo">
+      Radamò
+      <span>Pizzeria · Friggitoria</span>
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menù</a></li>
+      <li><a href="servizi.html">Servizi</a></li>
+      <li><a href="prenota.html" class="navbar__cta">Prenota</a></li>
+    </ul>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="navbar__mobile" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menù</a>
+    <a href="servizi.html">Servizi</a>
+    <a href="prenota.html">Prenota</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <span class="section-label">Dal nostro forno</span>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,6vw,4.5rem);">Il Nostro <em>Menù</em></h1>
+    </div>
+  </div>
+
+  <!-- MENU PAGE CONTENT -->
+  <section class="menu-page">
+    <!-- Tabs -->
+    <div class="menu-tabs" id="menuTabs">
+      <button class="menu-tab active" data-tab="antipasti">Antipasti</button>
+      <button class="menu-tab" data-tab="classiche">Pizze Classiche</button>
+      <button class="menu-tab" data-tab="gourmet">Pizze Gourmet</button>
+      <button class="menu-tab" data-tab="fritti">Fritti &amp; Ripieni</button>
+      <button class="menu-tab" data-tab="bevande">Bevande</button>
+    </div>
+
+    <!-- ANTIPASTI -->
+    <div class="menu-category active reveal" id="tab-antipasti">
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Mozzarella Di Bufala</span>
+            <span class="menu-item__desc">Con crudo di parma e rucola</span>
+          </div>
+          <span class="menu-item__price">€ 5,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Prosciutto E Mozzarella</span>
+            <span class="menu-item__desc">Prosciutto crudo di parma e mozzarella di bufala campana</span>
+          </div>
+          <span class="menu-item__price">€ 10,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Bruschette Ai Pomodorini (Pz. 2)</span>
+            <span class="menu-item__desc">Pane croccante condito con pomodorini dop, origano aglio, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 3,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Bruschette Miste (Pz. 2)</span>
+            <span class="menu-item__desc">Pane croccante condito a scelta della casa</span>
+          </div>
+          <span class="menu-item__price">€ 5,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Tagliere Misto (Per 2 Persone)</span>
+            <span class="menu-item__desc">Misto di salumi e formaggi</span>
+          </div>
+          <span class="menu-item__price">€ 20,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Insalatona Mista</span>
+            <span class="menu-item__desc">Insalata, rucola, pomodorini rossi e gialli, mais e tonno</span>
+          </div>
+          <span class="menu-item__price">€ 8,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Bresaola</span>
+            <span class="menu-item__desc">Condita con rucola, pomodorini rossi, scaglie di grana, glassa di aceto balsamico</span>
+          </div>
+          <span class="menu-item__price">€ 10,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Menù Baby</span>
+            <span class="menu-item__desc">Pennette al sugo</span>
+          </div>
+          <span class="menu-item__price">€ 8,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Menù Baby</span>
+            <span class="menu-item__desc">Cotoletta e patatine</span>
+          </div>
+          <span class="menu-item__price">€ 10,00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIZZE CLASSICHE -->
+    <div class="menu-category reveal" id="tab-classiche">
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Marinara</span>
+            <span class="menu-item__desc">Pomodoro san marzano dop, origano, aglio, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 5,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Marinara Rivisitata</span>
+            <span class="menu-item__desc">Pomodoro san marzano dop, aglio, olive di gaeta, filetti di pomodorini, alici di cetara, origano, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 7,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Cosacca</span>
+            <span class="menu-item__desc">Pomodoro san marzano dop, pecorino dop, pepe, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 5,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Mastunicola</span>
+            <span class="menu-item__desc">Sugna, pecorino dop, ciccioli di maiale, pepe, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 5,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Margherita</span>
+            <span class="menu-item__desc">Pomodoro san marzano dop, fior di latte di agerola, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 5,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Bufalina</span>
+            <span class="menu-item__desc">Pomodoro san marzano dop, mozzarella di bufala campana, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 7,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Diavola</span>
+            <span class="menu-item__desc">Pomodoro san marzano dop, fior di latte di agerola, spianata piccante, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 6,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Capricciosa</span>
+            <span class="menu-item__desc">Pomodoro san marzano dop, fior di latte di agerola, funghi champignon, prosciutto cotto, salame napoli, olive di gaeta, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 6,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Pub</span>
+            <span class="menu-item__desc">Wurstel, fior di latte di agerola, patatine fritte, pecorino dop e olio evo</span>
+          </div>
+          <span class="menu-item__price">€ 7,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Mimosa</span>
+            <span class="menu-item__desc">Fior di latte di agerola, prosciutto cotto, mais, panna, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 6,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Parigina</span>
+            <span class="menu-item__desc">Fior di latte di agerola, prosciutto cotto, panna, crocchè, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 7,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Formaggi</span>
+            <span class="menu-item__desc">Provola di agerola, fior di latte di agerola, gorgonzola, parmigiano a scaglie, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 6,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Primavera</span>
+            <span class="menu-item__desc">Fior di latte di agerola, prosciutto crudo di parma, rucola, filetti di pomodorini, scaglie di parmigiano, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 7,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Ortolana</span>
+            <span class="menu-item__desc">Provola di agerola, verdure di stagione, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 7,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Carrettiera</span>
+            <span class="menu-item__desc">Provola di agerola, salsiccia nostrana, friarielli, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 6,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Focaccia</span>
+            <span class="menu-item__desc">Focaccia di pizza, pecorino dop, origano, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 3,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Cornicione Ripieno</span>
+            <span class="menu-item__desc">Ricotta di fuscella, salame napoli</span>
+          </div>
+          <span class="menu-item__price">€ 3,00</span>
+        </div>
+      </div>
+      <div class="menu-note">🌾 Pizza senza glutine disponibile con supplemento di +3,00 €</div>
+    </div>
+
+    <!-- PIZZE GOURMET -->
+    <div class="menu-category reveal" id="tab-gourmet">
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Radamò</span>
+            <span class="menu-item__desc">Mozzarella di bufala campana, filetti di pomodorini rossi e gialli, ciuffi di ricotta di fuscella, pepe, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Scarpariello</span>
+            <span class="menu-item__desc">Provola di agerola, salsa di pomodorini di collina, pepe, pecorino dop a scaglie, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Signora In Giallo Rivisitata</span>
+            <span class="menu-item__desc">Mozzarella di bufala campana, filetti di pomodorini gialli, olive di gaeta, alici di cetara, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Mortazza</span>
+            <span class="menu-item__desc">Pesto di pistacchio, provola di agerola, mortadella, granella di pistacchio, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Tirolese</span>
+            <span class="menu-item__desc">Provola di agerola, funghi porcini, spek, asiago, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Zuccotta</span>
+            <span class="menu-item__desc">Crema di zucca, provola di agerola, salsiccia nostrana, scaglie di pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Fantasie Di Noci</span>
+            <span class="menu-item__desc">Crema di noci, provola di agerola, speck, scaglie di grana, noci, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Poggese</span>
+            <span class="menu-item__desc">Provola di agerola, patate al forno, funghi champignon, pancetta, fonduta di grana, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Donna Patrizia</span>
+            <span class="menu-item__desc">Vellutata di patate, provola di agerola, guanciale croccante, fonduta di parmigiano, mix di pepe, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 10,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Donna Carmela</span>
+            <span class="menu-item__desc">Provola di agerola, scarola cotta, filetti di pomodorini rossi, alici di cetara, olive di gaeta, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Don Gaetano</span>
+            <span class="menu-item__desc">Provola di agerola, melanzane a funghetto, salsiccia nostrana, scaglie di grana, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Nonna Lucia</span>
+            <span class="menu-item__desc">Salsa al ragù, provola di agerola, polpette fritte, ciuffi di ricotta di fuscella, pepe, pecorino dop, olio evo, basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Don Raffaele</span>
+            <span class="menu-item__desc">Pesto genovese, provola di agerola, patate al forno, salamino nostrano, fonduta di grana, pecorino dop, olio evo e basilico</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Donna Ilaria</span>
+            <span class="menu-item__desc">Mozzarella di bufala, bresaola, pomodoro secco, tarallo napoletano, pecorino dop, glassa di aceto balsamico, olio evo</span>
+          </div>
+          <span class="menu-item__price">€ 9,00</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__info">
+            <span class="menu-item__name">Pizza Del Mese</span>
+            <span class="menu-item__desc">Gusto a scelta dell'artista — pizza senza glutine +3,00</span>
+          </div>
+          <span class="menu-item__price">€ 10,00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FRITTI & RIPIENI -->
+    <div class="menu-category reveal" id="tab-fritti">
+      <div style="margin-bottom: 2.5rem;">
+        <span class="section-label">Fritti Artigianali</span>
+        <div class="menu-items" style="margin-top: 1rem;">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Zeppeline</span>
+              <span class="menu-item__desc">Impasto fritto</span>
+            </div>
+            <span class="menu-item__price">€ 2,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Patatine Fritte</span>
+            </div>
+            <span class="menu-item__price">€ 3,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Patatine Fritte Extra</span>
+              <span class="menu-item__desc">Wustel / salsiccia / scamorza / cheddar</span>
+            </div>
+            <span class="menu-item__price">€ 5,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Salsicciotto</span>
+              <span class="menu-item__desc">Wurstel grande, ricomperto d'impasto + patatine fritte</span>
+            </div>
+            <span class="menu-item__price">€ 2,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Montanara</span>
+              <span class="menu-item__desc">Pizza fritta vuota, condita con pomodoro san marzano dop, pecorino dop e basilico</span>
+            </div>
+            <span class="menu-item__price">€ 2,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Crocchè</span>
+              <span class="menu-item__desc">Panzerotto di patate, parmigiano, pecorino, pepe e olio evo</span>
+            </div>
+            <span class="menu-item__price">€ 2,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Arancino</span>
+              <span class="menu-item__desc">Supplì di riso</span>
+            </div>
+            <span class="menu-item__price">€ 2,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Frittatina</span>
+              <span class="menu-item__desc">Timballo di bucatini</span>
+            </div>
+            <span class="menu-item__price">€ 2,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Fritto Misto Radamò</span>
+              <span class="menu-item__desc">Montanara, crocchè, arancino, frittatina</span>
+            </div>
+            <span class="menu-item__price">€ 8,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Straccetti A Scelta</span>
+              <span class="menu-item__desc">Impasto fritto, condito con gusti a scelta</span>
+            </div>
+            <span class="menu-item__price">€ 8,00</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">Ripieni</span>
+        <div class="menu-items" style="margin-top: 1rem;">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Ripieno Al Forno Con Cotto/Salame</span>
+              <span class="menu-item__desc">Ricotta di fuscella, provola di agerola, prosciutto cotto/salame napoli, pomodoro san marzano dop, pecorino dop, olio evo e basilico</span>
+            </div>
+            <span class="menu-item__price">€ 7,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Ripieno Al Forno Con Scarola</span>
+              <span class="menu-item__desc">Provola di agerola, scarola cotta, salsiccia nostrana, olive di gaeta, pecorino dop, olio evo e basilico</span>
+            </div>
+            <span class="menu-item__price">€ 8,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Ripieno Fritto</span>
+              <span class="menu-item__desc">Provola di agerola, pomodoro san marzano dop, pecorino dop e basilico</span>
+            </div>
+            <span class="menu-item__price">€ 6,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Ripieno Fritto Completo</span>
+              <span class="menu-item__desc">Ricotta di fuscella, provola di agerola, ciccioli di maiale, pomodoro san marzano dop, pecorino dop, pepe e basilico</span>
+            </div>
+            <span class="menu-item__price">€ 7,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Tronchetto Primavera</span>
+              <span class="menu-item__desc">Fior di latte di agerola, prosciutto crudo di parma, rucola, filetti di pomodorini, scaglie di parmigiano, olio evo e basilico</span>
+            </div>
+            <span class="menu-item__price">€ 8,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Saltimbocca A Scelta</span>
+            </div>
+            <span class="menu-item__price">€ 10,00</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 2.5rem;">
+        <span class="section-label">Dessert</span>
+        <div class="menu-items" style="margin-top: 1rem;">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Straccetti</span>
+              <span class="menu-item__desc">Impasto fritto rivestito di zucchero, crema a scelta (Nutella, frutti di bosco o pistacchio), zucchero a velo e granella di nocciola</span>
+            </div>
+            <span class="menu-item__price">€ 8,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Dolce Del Giorno</span>
+            </div>
+            <span class="menu-item__price">€ 6,00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEVANDE -->
+    <div class="menu-category reveal" id="tab-bevande">
+      <div style="margin-bottom: 2.5rem;">
+        <span class="section-label">Bibite</span>
+        <div class="menu-items" style="margin-top: 1rem;">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Acqua Naturale</span>
+              <span class="menu-item__desc">50 / 75 cl</span>
+            </div>
+            <span class="menu-item__price">€ 1,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Acqua Frizzante</span>
+              <span class="menu-item__desc">50 / 75 cl</span>
+            </div>
+            <span class="menu-item__price">€ 1,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Coca-Cola</span>
+              <span class="menu-item__desc">33 cl</span>
+            </div>
+            <span class="menu-item__price">€ 2,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Coca-Cola Zero</span>
+              <span class="menu-item__desc">33 cl</span>
+            </div>
+            <span class="menu-item__price">€ 2,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Sprite</span>
+              <span class="menu-item__desc">33 cl</span>
+            </div>
+            <span class="menu-item__price">€ 2,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Fanta</span>
+              <span class="menu-item__desc">33 cl</span>
+            </div>
+            <span class="menu-item__price">€ 2,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Fuzetea Pesca</span>
+              <span class="menu-item__desc">40 cl</span>
+            </div>
+            <span class="menu-item__price">€ 2,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Fuzetea Limone</span>
+              <span class="menu-item__desc">40 cl</span>
+            </div>
+            <span class="menu-item__price">€ 2,50</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-bottom: 2.5rem;">
+        <span class="section-label">Birre</span>
+        <div class="menu-items" style="margin-top: 1rem;">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Nastro Azzurro</span>
+              <span class="menu-item__desc">33 / 66 cl</span>
+            </div>
+            <span class="menu-item__price">€ 3,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Heineken</span>
+              <span class="menu-item__desc">33 / 66 cl</span>
+            </div>
+            <span class="menu-item__price">€ 3,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Leffe Blonde</span>
+              <span class="menu-item__desc">33 cl</span>
+            </div>
+            <span class="menu-item__price">€ 4,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Leffe Rouge</span>
+              <span class="menu-item__desc">33 cl</span>
+            </div>
+            <span class="menu-item__price">€ 4,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Tennent's</span>
+              <span class="menu-item__desc">33 cl</span>
+            </div>
+            <span class="menu-item__price">€ 4,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Fischer</span>
+              <span class="menu-item__desc">65 cl</span>
+            </div>
+            <span class="menu-item__price">€ 6,00</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-bottom: 2.5rem;">
+        <span class="section-label">Vini</span>
+        <div class="menu-items" style="margin-top: 1rem;">
+          <div class="menu-item">
+            <div class="menu-item__info"><span class="menu-item__name">Falanghina Doc</span></div>
+            <span class="menu-item__price">€ 15,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><span class="menu-item__name">Aglianico Doc</span></div>
+            <span class="menu-item__price">€ 15,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><span class="menu-item__name">Gragnano Doc</span></div>
+            <span class="menu-item__price">€ 20,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><span class="menu-item__name">Prosecco</span></div>
+            <span class="menu-item__price">€ 20,00</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-bottom: 2.5rem;">
+        <span class="section-label">Drink</span>
+        <div class="menu-items" style="margin-top: 1rem;">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Gin Tonic / Lemon</span>
+              <span class="menu-item__desc">Gin, water, tonic o lemon soda</span>
+            </div>
+            <span class="menu-item__price">€ 5,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Limoncello Spritz</span>
+              <span class="menu-item__desc">Limoncello, prosecco, water tonic</span>
+            </div>
+            <span class="menu-item__price">€ 5,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Aperol Spritz</span>
+              <span class="menu-item__desc">Aperol, prosecco, water soda</span>
+            </div>
+            <span class="menu-item__price">€ 5,00</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">Liquori</span>
+        <div class="menu-items" style="margin-top: 1rem;">
+          <div class="menu-item">
+            <div class="menu-item__info">
+              <span class="menu-item__name">Digestivi</span>
+              <span class="menu-item__desc">A scelta</span>
+            </div>
+            <span class="menu-item__price">€ 3,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><span class="menu-item__name">Caffè</span></div>
+            <span class="menu-item__price">€ 1,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__info"><span class="menu-item__name">Rhum / Grappa</span></div>
+            <span class="menu-item__price">€ 5,00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING STRIP -->
+  <section class="booking-strip">
+    <div class="booking-strip__content">
+      <div class="booking-strip__label">Vuoi venire a trovarci?</div>
+      <h2 class="booking-strip__title">Prenota il tuo tavolo</h2>
+      <p class="booking-strip__note">Il sabato il servizio funziona a lista. Attendi conferma WhatsApp.</p>
+    </div>
+    <div class="booking-strip__actions">
+      <a href="prenota.html" class="btn btn-dark">📅 Prenota Ora</a>
+      <a href="https://wa.me/393793166468" target="_blank" rel="noopener" class="btn btn-wa">💬 WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">Radamò</div>
+        <div class="footer__brand-sub">Pizzeria · Friggitoria</div>
+        <p class="footer__brand-desc">Passione, umiltà e qualità in ogni pizza. Un locale dove la tradizione napoletana incontra l'ospitalità vera.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigazione</div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menù</a>
+          <a href="servizi.html">Servizi</a>
+          <a href="prenota.html">Prenota</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Menù</div>
+        <div class="footer__links">
+          <a href="menu.html">Antipasti &amp; Fritti</a>
+          <a href="menu.html">Pizze</a>
+          <a href="menu.html">Desserts</a>
+          <a href="menu.html">Bevande</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contatti</div>
+        <div class="footer__contact-item">
+          <span>📍</span>
+          <span>Viale Alessandro Manzoni, 235 — 80040 Poggiomarino (NA)</span>
+        </div>
+        <div class="footer__contact-item">
+          <span>📞</span>
+          <span>
+            <a href="tel:0813046051" style="color:var(--clr-gold)">081 304 6051</a><br>
+            <a href="tel:+393793166468" style="color:var(--clr-gold)">📱 379 316 6468</a>
+          </span>
+        </div>
+        <div class="footer__contact-item">
+          <span>🕕</span>
+          <span>Aperti dalle 18:00<br>Lunedì Chiuso</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">© 2026 Pizzeria Friggitoria Radamò — Poggiomarino, Napoli</div>
+      <div class="footer__social">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+        <a href="https://wa.me/393793166468" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+

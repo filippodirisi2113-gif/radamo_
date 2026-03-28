@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prenota un tavolo alla Pizzeria Radamò di Poggiomarino. Chiama al 081 304 6051 o scrivi su WhatsApp. Aperto dalle 18:00, il sabato a lista.">
+  <title>Prenota — Radamò Pizzeria Friggitoria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="navbar__logo">
+      Radamò
+      <span>Pizzeria · Friggitoria</span>
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menù</a></li>
+      <li><a href="servizi.html">Servizi</a></li>
+      <li><a href="prenota.html" class="navbar__cta active" style="background:var(--clr-gold);color:#000;">Prenota</a></li>
+    </ul>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="navbar__mobile" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menù</a>
+    <a href="servizi.html">Servizi</a>
+    <a href="prenota.html">Prenota</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero__bg" style="background-image:url('assets/hero_bg.png');"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <span class="section-label">Reservations</span>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,6vw,4.5rem);">Prenota il tuo <em>Tavolo</em></h1>
+    </div>
+  </div>
+
+  <!-- PRENOTA CONTENT -->
+  <section>
+    <!-- AVVISI IMPORTANTI -->
+    <div class="alert-box reveal" style="margin-bottom:3rem;">
+      <div class="alert-box__title">⚠️ Informazioni Importanti sulla Prenotazione</div>
+      <div class="alert-box__text">
+        Attendi sempre la <strong>conferma della prenotazione su WhatsApp</strong> prima di considerarla confermata.<br><br>
+        <strong>Il sabato</strong> non accettiamo prenotazioni: il servizio funziona <strong>a lista</strong>. Arriva e mettiti in lista alla cassa.<br><br>
+        Siamo aperti dalle 18:00. Per cena, si consiglia la prenotazione anticipata.
+      </div>
+    </div>
+
+    <div class="contact-layout">
+      <!-- LEFT: Info -->
+      <div class="contact-info reveal">
+
+        <!-- Dove siamo -->
+        <div class="contact-info__block">
+          <div class="contact-info__row">
+            <div class="contact-info__row-icon">📍</div>
+            <div>
+              <span class="contact-info__row-label">Indirizzo</span>
+              <div class="contact-info__row-value">
+                <a href="https://www.google.com/maps/search/Viale+Alessandro+Manzoni+235+Poggiomarino" target="_blank" rel="noopener">
+                  Viale Alessandro Manzoni, 235<br>80040 Poggiomarino (NA)
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info__row">
+            <div class="contact-info__row-icon">📞</div>
+            <div>
+              <span class="contact-info__row-label">Telefono</span>
+              <div class="contact-info__row-value">
+                <a href="tel:0813046051">081 304 6051</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info__row">
+            <div class="contact-info__row-icon">🌐</div>
+            <div>
+              <span class="contact-info__row-label">Facebook</span>
+              <div class="contact-info__row-value">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener">Segui il locale su Facebook</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Orari -->
+        <div style="margin-bottom:1.5rem;">
+          <span class="section-label">Orari di Apertura</span>
+          <div class="hours-grid" style="margin-top:1rem;">
+            <div class="hours-day">
+              <div class="hours-day__name">Lunedì</div>
+              <div class="hours-day__time">18:00 – 00:00</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day__name">Martedì</div>
+              <div class="hours-day__time">18:00 – 00:00</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day__name">Mercoledì</div>
+              <div class="hours-day__time">18:00 – 00:00</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day__name">Giovedì</div>
+              <div class="hours-day__time">18:00 – 00:00</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day__name">Venerdì</div>
+              <div class="hours-day__time">18:00 – 00:00</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day__name">Sabato 🔴</div>
+              <div class="hours-day__time closed" style="color:var(--clr-gold); font-size:0.78rem;">A lista (senza prenotaz.)</div>
+            </div>
+            <div class="hours-day" style="grid-column: span 2;">
+              <div class="hours-day__name">Domenica</div>
+              <div class="hours-day__time">18:00 – 00:00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <span class="section-label">Contattaci Direttamente</span>
+        <div class="social-links" style="margin-top:1rem; flex-wrap:wrap;">
+          <a href="tel:0813046051" class="social-link" style="background:rgba(200,148,63,0.1); border-color:rgba(200,148,63,0.3); color:var(--clr-gold);">
+            📞 Chiamaci
+          </a>
+          <a href="https://wa.me/393793166468" target="_blank" rel="noopener" class="social-link" style="background:rgba(37,211,102,0.08); border-color:rgba(37,211,102,0.3); color:#25D366;">
+            💬 WhatsApp
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-link">
+            📘 Facebook
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Map -->
+      <div class="reveal reveal-delay-2">
+        <div class="map-embed" style="margin-bottom:2rem;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.7839874!2d14.5433!3d40.78733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bba4b975286f1%3A0x5570474464a83d20!2sPizzeria+Friggitoria+Radam%C3%B2!5e0!3m2!1sit!2sit!4v1711545000000!5m2!1sit!2sit"
+            width="600" height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mappa Pizzeria Radamò Poggiomarino">
+          </iframe>
+        </div>
+
+        <!-- Cards info extra-->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="service-block" style="padding:1.4rem;">
+            <div class="service-block__header">
+              <span class="service-block__icon">🛵</span>
+              <h3 class="service-block__title" style="font-size:0.9rem;">Asporto</h3>
+            </div>
+            <p style="font-size:0.8rem;color:var(--clr-text-muted);margin-top:0.5rem;">Ordina e ritira in pizzeria senza attese.</p>
+          </div>
+          <div class="service-block" style="padding:1.4rem;">
+            <div class="service-block__header">
+              <span class="service-block__icon">🏠</span>
+              <h3 class="service-block__title" style="font-size:0.9rem;">Consegna a Casa</h3>
+            </div>
+            <p style="font-size:0.8rem;color:var(--clr-text-muted);margin-top:0.5rem;">Chiama per verificare la zona di consegna.</p>
+          </div>
+          <div class="service-block" style="padding:1.4rem;">
+            <div class="service-block__header">
+              <span class="service-block__icon">🅿️</span>
+              <h3 class="service-block__title" style="font-size:0.9rem;">Parcheggio</h3>
+            </div>
+            <p style="font-size:0.8rem;color:var(--clr-text-muted);margin-top:0.5rem;">Parcheggio gratuito in strada nelle vicinanze.</p>
+          </div>
+          <div class="service-block" style="padding:1.4rem;">
+            <div class="service-block__header">
+              <span class="service-block__icon">💳</span>
+              <h3 class="service-block__title" style="font-size:0.9rem;">Pagamenti</h3>
+            </div>
+            <p style="font-size:0.8rem;color:var(--clr-text-muted);margin-top:0.5rem;">Carta di credito, debito, NFC accettati.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">Radamò</div>
+        <div class="footer__brand-sub">Pizzeria · Friggitoria</div>
+        <p class="footer__brand-desc">Passione, umiltà e qualità in ogni pizza. Un locale dove la tradizione napoletana incontra l'ospitalità vera.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigazione</div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menù</a>
+          <a href="servizi.html">Servizi</a>
+          <a href="prenota.html">Prenota</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Servizi</div>
+        <div class="footer__links">
+          <a href="servizi.html">Consegna a Domicilio</a>
+          <a href="servizi.html">Asporto</a>
+          <a href="servizi.html">Tavoli all'Aperto</a>
+          <a href="servizi.html">Accessibilità</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contatti</div>
+        <div class="footer__contact-item">
+          <span>📍</span>
+          <span>Viale Alessandro Manzoni, 235 — 80040 Poggiomarino (NA)</span>
+        </div>
+        <div class="footer__contact-item">
+          <span>📞</span>
+          <span>
+            <a href="tel:0813046051" style="color:var(--clr-gold)">081 304 6051</a><br>
+            <a href="tel:+393793166468" style="color:var(--clr-gold)">📱 379 316 6468</a>
+          </span>
+        </div>
+        <div class="footer__contact-item">
+          <span>🕕</span>
+          <span>Aperti dalle 18:00<br>Lunedì Chiuso</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">© 2026 Pizzeria Friggitoria Radamò — Poggiomarino, Napoli</div>
+      <div class="footer__social">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+        <a href="https://wa.me/393793166468" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+

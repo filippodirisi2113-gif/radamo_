@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servizi da Radamò: consegna a domicilio, asporto, tavoli all'aperto, accessibilità, feste per bambini, parcheggio gratuito. Scopri tutto.">
+  <title>Servizi — Radamò Pizzeria Friggitoria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="navbar__logo">
+      Radamò
+      <span>Pizzeria · Friggitoria</span>
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menù</a></li>
+      <li><a href="servizi.html" class="active">Servizi</a></li>
+      <li><a href="prenota.html" class="navbar__cta">Prenota</a></li>
+    </ul>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="navbar__mobile" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menù</a>
+    <a href="servizi.html">Servizi</a>
+    <a href="prenota.html">Prenota</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero__bg" style="background-image:url('assets/hero_bg.png');"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <span class="section-label">Tutto ciò che offriamo</span>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,6vw,4.5rem);">I Nostri <em>Servizi</em></h1>
+    </div>
+  </div>
+
+  <!-- SERVICES PAGE -->
+  <section class="services-page">
+    <div class="section-header reveal">
+      <span class="section-label">Benessere e Comodità</span>
+      <h2 class="section-title">Un'esperienza <em>completa</em></h2>
+      <p class="section-subtitle">Non solo una pizza. Al Radamò troverai tutto il necessario per un'uscita comoda, accessibile e memorabile.</p>
+    </div>
+
+    <div class="services-blocks">
+
+      <!-- Servizio -->
+      <div class="service-block reveal reveal-delay-1">
+        <div class="service-block__header">
+          <span class="service-block__icon">🍽️</span>
+          <h3 class="service-block__title">Servizio</h3>
+        </div>
+        <div class="service-block__items">
+          <div class="service-block__item">Tavoli all'aperto</div>
+          <div class="service-block__item">Consegna a domicilio</div>
+          <div class="service-block__item">Asporto</div>
+          <div class="service-block__item">Consumazione sul posto</div>
+          <div class="service-block__item">Servizio al tavolo</div>
+        </div>
+      </div>
+
+      <!-- In Evidenza -->
+      <div class="service-block reveal reveal-delay-2">
+        <div class="service-block__header">
+          <span class="service-block__icon">⭐</span>
+          <h3 class="service-block__title">In Evidenza</h3>
+        </div>
+        <div class="service-block__items">
+          <div class="service-block__item">Ottimi dessert</div>
+          <div class="service-block__item">Tavoli all'aperto</div>
+          <div class="service-block__item">Vasta selezione di birre</div>
+          <div class="service-block__item">Pasti fino a tarda sera</div>
+        </div>
+      </div>
+
+      <!-- Proposte -->
+      <div class="service-block reveal reveal-delay-3">
+        <div class="service-block__header">
+          <span class="service-block__icon">🍺</span>
+          <h3 class="service-block__title">Proposte</h3>
+        </div>
+        <div class="service-block__items">
+          <div class="service-block__item">Alcolici e superalcolici</div>
+          <div class="service-block__item">Assaggi e degustazioni</div>
+          <div class="service-block__item">Birra artigianale</div>
+          <div class="service-block__item">Caffè espresso napoletano</div>
+          <div class="service-block__item">Cibo sano e prodotti freschi</div>
+          <div class="service-block__item">Pasto veloce disponibile</div>
+          <div class="service-block__item">Vino della casa</div>
+        </div>
+      </div>
+
+      <!-- Accessibilità -->
+      <div class="service-block reveal reveal-delay-1">
+        <div class="service-block__header">
+          <span class="service-block__icon">♿</span>
+          <h3 class="service-block__title">Accessibilità</h3>
+        </div>
+        <div class="service-block__items">
+          <div class="service-block__item">Bagno accessibile in sedia a rotelle</div>
+          <div class="service-block__item">Ingresso accessibile in sedia a rotelle</div>
+          <div class="service-block__item">Parcheggio accessibile in sedia a rotelle</div>
+          <div class="service-block__item">Tavoli accessibili in sedia a rotelle</div>
+        </div>
+      </div>
+
+      <!-- Bambini -->
+      <div class="service-block reveal reveal-delay-2">
+        <div class="service-block__header">
+          <span class="service-block__icon">👶</span>
+          <h3 class="service-block__title">Famiglie &amp; Bambini</h3>
+        </div>
+        <div class="service-block__items">
+          <div class="service-block__item">Adatto ai bambini</div>
+          <div class="service-block__item">Zona giochi dedicata</div>
+          <div class="service-block__item">Vasca di palline</div>
+          <div class="service-block__item">Mini giochi e attrazioni</div>
+          <div class="service-block__item">Feste di compleanno per bambini</div>
+          <div class="service-block__item">Menu dedicato ai bambini</div>
+          <div class="service-block__item">Seggioloni disponibili</div>
+        </div>
+      </div>
+
+      <!-- Parcheggio -->
+      <div class="service-block reveal reveal-delay-3">
+        <div class="service-block__header">
+          <span class="service-block__icon">🅿️</span>
+          <h3 class="service-block__title">Parcheggio</h3>
+        </div>
+        <div class="service-block__items">
+          <div class="service-block__item">Molti posti auto disponibili</div>
+          <div class="service-block__item">Parcheggio gratuito</div>
+          <div class="service-block__item">Parcheggio in strada gratuito</div>
+        </div>
+      </div>
+
+      <!-- Ristorazione -->
+      <div class="service-block reveal reveal-delay-1">
+        <div class="service-block__header">
+          <span class="service-block__icon">🥘</span>
+          <h3 class="service-block__title">Ristorazione</h3>
+        </div>
+        <div class="service-block__items">
+          <div class="service-block__item">Cena tipica napoletana</div>
+          <div class="service-block__item">Dessert artigianali</div>
+          <div class="service-block__item">Posti a sedere (interno ed esterno)</div>
+          <div class="service-block__item">Servizio al tavolo</div>
+          <div class="service-block__item">Toilette disponibile</div>
+        </div>
+      </div>
+
+      <!-- Pianificazione -->
+      <div class="service-block reveal reveal-delay-2">
+        <div class="service-block__header">
+          <span class="service-block__icon">📅</span>
+          <h3 class="service-block__title">Pianificazione &amp; Gruppi</h3>
+        </div>
+        <div class="service-block__items">
+          <div class="service-block__item">Prenotazione cena consigliata</div>
+          <div class="service-block__item">Accetta prenotazioni (non sabato)</div>
+          <div class="service-block__item">Adatto a gruppi</div>
+          <div class="service-block__item">Ideale per cene in compagnia</div>
+        </div>
+      </div>
+
+      <!-- Pagamenti -->
+      <div class="service-block reveal reveal-delay-3">
+        <div class="service-block__header">
+          <span class="service-block__icon">💳</span>
+          <h3 class="service-block__title">Metodi di Pagamento</h3>
+        </div>
+        <div class="service-block__items">
+          <div class="service-block__item">Carte di credito</div>
+          <div class="service-block__item">Carte di debito</div>
+          <div class="service-block__item">Pagamenti mobile NFC</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="booking-strip">
+    <div class="booking-strip__content">
+      <div class="booking-strip__label">Vieni a trovarci</div>
+      <h2 class="booking-strip__title">Prenota il tuo tavolo</h2>
+      <p class="booking-strip__note">Il sabato il servizio funziona a lista. Attendi sempre la conferma su WhatsApp.</p>
+    </div>
+    <div class="booking-strip__actions">
+      <a href="prenota.html" class="btn btn-dark">📅 Prenota</a>
+      <a href="https://wa.me/393793166468" target="_blank" rel="noopener" class="btn btn-wa">💬 WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">Radamò</div>
+        <div class="footer__brand-sub">Pizzeria · Friggitoria</div>
+        <p class="footer__brand-desc">Passione, umiltà e qualità in ogni pizza. Un locale dove la tradizione napoletana incontra l'ospitalità vera.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigazione</div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menù</a>
+          <a href="servizi.html">Servizi</a>
+          <a href="prenota.html">Prenota</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Servizi</div>
+        <div class="footer__links">
+          <a href="servizi.html">Consegna a Domicilio</a>
+          <a href="servizi.html">Asporto</a>
+          <a href="servizi.html">Tavoli all'Aperto</a>
+          <a href="servizi.html">Accessibilità</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contatti</div>
+        <div class="footer__contact-item">
+          <span>📍</span>
+          <span>Viale Alessandro Manzoni, 235 — 80040 Poggiomarino (NA)</span>
+        </div>
+        <div class="footer__contact-item">
+          <span>📞</span>
+          <span>
+            <a href="tel:0813046051" style="color:var(--clr-gold)">081 304 6051</a><br>
+            <a href="tel:+393793166468" style="color:var(--clr-gold)">📱 379 316 6468</a>
+          </span>
+        </div>
+        <div class="footer__contact-item">
+          <span>🕕</span>
+          <span>Aperti dalle 18:00<br>Lunedì Chiuso</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">© 2026 Pizzeria Friggitoria Radamò — Poggiomarino, Napoli</div>
+      <div class="footer__social">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+        <a href="https://wa.me/393793166468" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+

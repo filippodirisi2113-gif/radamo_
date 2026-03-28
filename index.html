@@ -1,0 +1,394 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pizzeria Friggitoria Radamò a Poggiomarino - Passione, umiltà e qualità in ogni pizza. Consegna a domicilio, asporto, tavoli all'aperto. Aperto dalle 18:00.">
+  <title>Radamò — Pizzeria Friggitoria | Poggiomarino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar__logo">
+      Radamò
+      <span>Pizzeria · Friggitoria</span>
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menù</a></li>
+      <li><a href="servizi.html">Servizi</a></li>
+      <li><a href="prenota.html" class="navbar__cta">Prenota</a></li>
+    </ul>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="navbar__mobile" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menù</a>
+    <a href="servizi.html">Servizi</a>
+    <a href="prenota.html">Prenota</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__tag">Poggiomarino, Napoli</div>
+      <h1 class="hero__title">
+        Tradizione<br>
+        <em>&amp; Passione</em>
+      </h1>
+      <p class="hero__description">
+        Ogni pizza nasce da un impasto curato con dedizione, da ingredienti selezionati 
+        e da un fuoco che racconta anni di esperienza. <br><br>
+        <em>Dal 2018 in continua evoluzione, cosa aspetti? Vieni a provarla! 🍕</em>
+      </p>
+      <div class="hero__actions">
+        <a href="menu.html" class="btn btn-primary">Scopri il Menù</a>
+        <a href="prenota.html" class="btn btn-outline">Prenota un Tavolo</a>
+      </div>
+    </div>
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <div class="hero__stat-number">4.2★</div>
+        <div class="hero__stat-label">Valutazione media</div>
+      </div>
+      <div class="hero__stat">
+        <div class="hero__stat-number">644+</div>
+        <div class="hero__stat-label">Recensioni Google</div>
+      </div>
+      <div class="hero__stat">
+        <div class="hero__stat-number">Dal 2010</div>
+        <div class="hero__stat-label">A Poggiomarino</div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scorri</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- INFO STRIP -->
+  <div class="info-strip">
+    <div class="info-strip__item">
+      <div class="info-strip__icon">📍</div>
+      <div class="info-strip__text">
+        <strong>Viale A. Manzoni, 235</strong>
+        <span>Poggiomarino (NA), 80040</span>
+      </div>
+    </div>
+    <div class="info-strip__item">
+      <div class="info-strip__icon">🕕</div>
+      <div class="info-strip__text">
+        <strong>Aperti dalle 18:00</strong>
+        <span>Chiuso il Lunedì</span>
+      </div>
+    </div>
+    <div class="info-strip__item">
+      <div class="info-strip__icon">📞</div>
+      <div class="info-strip__text">
+        <strong>081 304 6051</strong>
+        <span>Chiamaci per informazioni</span>
+      </div>
+    </div>
+    <div class="info-strip__item">
+      <div class="info-strip__icon">🛵</div>
+      <div class="info-strip__text">
+        <strong>Consegna a Domicilio</strong>
+        <span>Asporto e consumazione sul posto</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT / FILOSOFIA -->
+  <section>
+    <div class="about reveal">
+      <div class="about__visual">
+        <img src="assets/pizza.png" alt="Pizza Radamò" class="about__img">
+        <div class="about__badge">
+          <strong>4.2</strong>
+          stelle su Google<br>da 644 recensioni
+        </div>
+      </div>
+      <div class="about__content">
+        <span class="section-label">La Nostra Filosofia</span>
+        <h2 class="section-title">Semina.<br>Annaffia.<br><em>Sii paziente.</em></h2>
+        <div class="divider"></div>
+        <blockquote class="about__quote">
+          "Passione, umiltà e qualità sono gli ingredienti segreti dietro ogni impasto. 
+          Ogni pizza racconta una storia fatta di cura, tradizione e amore per ciò che facciamo."
+        </blockquote>
+        <p class="section-subtitle" style="margin-bottom: 2rem;">
+          Nulla avviene per caso. Ogni pizza, ogni fritto, ogni dessert da Radamò è il risultato 
+          di un processo lento, amorevole, che rispetta le tradizioni della cucina napoletana.
+        </p>
+        <div class="about__features">
+          <div class="about__feature">
+            <span class="about__feature-icon">🔥</span>
+            <div>
+              <span class="about__feature-title">Forno a Legna</span>
+              <span class="about__feature-text">Cottura tradizionale ad alta temperatura</span>
+            </div>
+          </div>
+          <div class="about__feature">
+            <span class="about__feature-icon">🌿</span>
+            <div>
+              <span class="about__feature-title">Ingredienti Freschi</span>
+              <span class="about__feature-text">Selezionati ogni giorno con cura</span>
+            </div>
+          </div>
+          <div class="about__feature">
+            <span class="about__feature-icon">🎮</span>
+            <div>
+              <span class="about__feature-title">Zona Giochi Bambini</span>
+              <span class="about__feature-text">Mini giochi e vasca di palline inclusi</span>
+            </div>
+          </div>
+          <div class="about__feature">
+            <span class="about__feature-icon">👨‍👧‍👦</span>
+            <div>
+              <span class="about__feature-title">Family Friendly</span>
+              <span class="about__feature-text">Seggioloni, menu bimbi e tavoli all'aperto</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 2.5rem;">
+          <a href="servizi.html" class="btn btn-outline">Scopri i Servizi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU PREVIEW -->
+  <section class="menu-preview">
+    <div class="section-header reveal">
+      <span class="section-label">Dal Nostro Menù</span>
+      <h2 class="section-title">Una cucina <em>autentica</em></h2>
+      <p class="section-subtitle">Dai fritti della tradizione alle pizze più ricercate, passando per dessert irresistibili.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card reveal reveal-delay-1">
+        <img src="assets/antipasti.png" alt="Antipasti e Fritti" class="menu-card__img">
+        <div class="menu-card__overlay">
+          <span class="menu-card__label">Apertura</span>
+          <h3 class="menu-card__title">Antipasti &amp; Fritti</h3>
+          <div class="menu-card__arrow">Vedi tutto →</div>
+        </div>
+        <a href="menu.html?tab=antipasti" style="position:absolute;inset:0;z-index:2;"></a>
+      </div>
+      <div class="menu-card reveal reveal-delay-2">
+        <img src="assets/pizza.png" alt="Pizza Napoletana" class="menu-card__img">
+        <div class="menu-card__overlay">
+          <span class="menu-card__label">Il Cuore del Menù</span>
+          <h3 class="menu-card__title">Pizze</h3>
+          <div class="menu-card__arrow">Vedi tutto →</div>
+        </div>
+        <a href="menu.html?tab=pizze" style="position:absolute;inset:0;z-index:2;"></a>
+      </div>
+      <div class="menu-card reveal reveal-delay-3">
+        <img src="assets/desserts.png" alt="Desserts" class="menu-card__img">
+        <div class="menu-card__overlay">
+          <span class="menu-card__label">Fine pasto</span>
+          <h3 class="menu-card__title">Desserts</h3>
+          <div class="menu-card__arrow">Vedi tutto →</div>
+        </div>
+        <a href="menu.html?tab=desserts" style="position:absolute;inset:0;z-index:2;"></a>
+      </div>
+    </div>
+    <div class="menu-cta reveal">
+      <a href="menu.html" class="btn btn-primary">Mostra Tutto il Menù</a>
+    </div>
+  </section>
+
+  <!-- SERVICES HIGHLIGHTS -->
+  <section class="services-highlights">
+    <div class="section-header reveal">
+      <span class="section-label">I Nostri Servizi</span>
+      <h2 class="section-title">Rendi speciale <em>un momento speciale</em></h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-card__icon">🌿</div>
+        <h3 class="service-card__title">Tavoli all'Aperto</h3>
+        <p class="service-card__desc">Goditi la tua serata all'aria aperta, in un'atmosfera rilassata e accogliente.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-card__icon">🛵</div>
+        <h3 class="service-card__title">Consegna a Domicilio</h3>
+        <p class="service-card__desc">Porta il gusto di Radamò direttamente a casa tua. Qualità garantita anche a domicilio.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-card__icon">♿</div>
+        <h3 class="service-card__title">Accessibilità Totale</h3>
+        <p class="service-card__desc">Ingresso, tavoli, bagno e parcheggio completamente accessibili con sedia a rotelle.</p>
+      </div>
+      <div class="service-card reveal reveal-delay-4">
+        <div class="service-card__icon">🎮</div>
+        <h3 class="service-card__title">Zona Giochi Bambini</h3>
+        <p class="service-card__desc">Un'area dedicata con vasca di palline e mini giochi, per una serata tranquilla anche in famiglia.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:3rem;" class="reveal">
+      <a href="servizi.html" class="btn btn-outline">Tutti i Servizi</a>
+    </div>
+  </section>
+
+  <!-- REVIEWS TICKER -->
+  <section class="reviews-ticker">
+    <div class="reviews-ticker__header">
+      <div>
+        <div class="reviews-ticker__stars">★★★★☆</div>
+        <div class="reviews-ticker__meta">4.2 su Google · 644 recensioni</div>
+      </div>
+      <a href="https://www.google.com/maps/place/Pizzeria+Friggitoria+Radamo'/@40.7873,14.5477,17z/" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.72rem; padding:0.6rem 1.2rem;">Scrivi una Recensione</a>
+    </div>
+    <div class="reviews-track-wrapper">
+      <div class="reviews-track" id="reviewsTrack">
+        <!-- Reviews duplicated for infinite loop -->
+        <div class="review-item">
+          <div class="review-item__stars">★★★★★</div>
+          <p class="review-item__text">"Pizza buonissima, impasto perfetto e ingredienti freschi. Locale fantastico!"</p>
+          <span class="review-item__author">Maria T. · Google</span>
+        </div>
+        <div class="review-item">
+          <div class="review-item__stars">★★★★★</div>
+          <p class="review-item__text">"Fritti eccezionali, servizio attento e locale accogliente. Torneremo sicuramente."</p>
+          <span class="review-item__author">Luca D. · Google</span>
+        </div>
+        <div class="review-item">
+          <div class="review-item__stars">★★★★☆</div>
+          <p class="review-item__text">"Posizione ottima, pizza croccante al punto giusto. Ottimi dessert!"</p>
+          <span class="review-item__author">Sofia R. · Google</span>
+        </div>
+        <div class="review-item">
+          <div class="review-item__stars">★★★★★</div>
+          <p class="review-item__text">"Ambiente bellissimo, personale gentilissimo. La margherita è semplicemente divina."</p>
+          <span class="review-item__author">Antonio M. · Google</span>
+        </div>
+        <div class="review-item">
+          <div class="review-item__stars">★★★★★</div>
+          <p class="review-item__text">"Vasta selezione di birre artigianali. Abbinamento perfetto con le loro pizze."</p>
+          <span class="review-item__author">Elena B. · Google</span>
+        </div>
+        <div class="review-item">
+          <div class="review-item__stars">★★★★☆</div>
+          <p class="review-item__text">"Ottimo rapporto qualità prezzo, pasti fino a tarda sera. Consigliato!"</p>
+          <span class="review-item__author">Francesco P. · Google</span>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="review-item">
+          <div class="review-item__stars">★★★★★</div>
+          <p class="review-item__text">"Pizza buonissima, impasto perfetto e ingredienti freschi. Locale fantastico!"</p>
+          <span class="review-item__author">Maria T. · Google</span>
+        </div>
+        <div class="review-item">
+          <div class="review-item__stars">★★★★★</div>
+          <p class="review-item__text">"Fritti eccezionali, servizio attento e locale accogliente. Torneremo sicuramente."</p>
+          <span class="review-item__author">Luca D. · Google</span>
+        </div>
+        <div class="review-item">
+          <div class="review-item__stars">★★★★☆</div>
+          <p class="review-item__text">"Posizione ottima, pizza croccante al punto giusto. Ottimi dessert!"</p>
+          <span class="review-item__author">Sofia R. · Google</span>
+        </div>
+        <div class="review-item">
+          <div class="review-item__stars">★★★★★</div>
+          <p class="review-item__text">"Ambiente bellissimo, personale gentilissimo. La margherita è semplicemente divina."</p>
+          <span class="review-item__author">Antonio M. · Google</span>
+        </div>
+        <div class="review-item">
+          <div class="review-item__stars">★★★★★</div>
+          <p class="review-item__text">"Vasta selezione di birre artigianali. Abbinamento perfetto con le loro pizze."</p>
+          <span class="review-item__author">Elena B. · Google</span>
+        </div>
+        <div class="review-item">
+          <div class="review-item__stars">★★★★☆</div>
+          <p class="review-item__text">"Ottimo rapporto qualità prezzo, pasti fino a tarda sera. Consigliato!"</p>
+          <span class="review-item__author">Francesco P. · Google</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING STRIP -->
+  <section class="booking-strip">
+    <div class="booking-strip__content">
+      <div class="booking-strip__label">Reservations</div>
+      <h2 class="booking-strip__title">Prenota il tuo tavolo</h2>
+      <p class="booking-strip__note">
+        ⚠️ Il sabato il servizio funziona a lista. Attendi sempre la conferma su WhatsApp. 
+        Aperti dalle 18:00 alle 00:00 (Lunedì chiuso).
+      </p>
+    </div>
+    <div class="booking-strip__actions">
+      <a href="tel:0813046051" class="btn btn-dark">📞 0813046051</a>
+      <a href="https://wa.me/393793166468" target="_blank" rel="noopener" class="btn btn-wa">💬 WhatsApp</a>
+      <a href="prenota.html" class="btn btn-outline" style="border-color:rgba(0,0,0,0.3); color:#000;">Scopri di più →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">Radamò</div>
+        <div class="footer__brand-sub">Pizzeria · Friggitoria</div>
+        <p class="footer__brand-desc">Passione, umiltà e qualità in ogni pizza. Un locale dove la tradizione napoletana incontra l'ospitalità vera.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Navigazione</div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menù</a>
+          <a href="servizi.html">Servizi</a>
+          <a href="prenota.html">Prenota</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Servizi</div>
+        <div class="footer__links">
+          <a href="servizi.html">Consegna a Domicilio</a>
+          <a href="servizi.html">Asporto</a>
+          <a href="servizi.html">Tavoli all'Aperto</a>
+          <a href="servizi.html">Accessibilità</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contatti</div>
+        <div class="footer__contact-item">
+          <span>📍</span>
+          <span>Viale Alessandro Manzoni, 235 — 80040 Poggiomarino (NA)</span>
+        </div>
+        <div class="footer__contact-item">
+          <span>📞</span>
+          <span>
+            <a href="tel:0813046051" style="color:var(--clr-gold)">081 304 6051</a><br>
+            <a href="tel:+393793166468" style="color:var(--clr-gold)">📱 379 316 6468</a>
+          </span>
+        </div>
+        <div class="footer__contact-item">
+          <span>🕕</span>
+          <span>Aperti dalle 18:00<br>Lunedì Chiuso</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">© 2026 Pizzeria Friggitoria Radamò — Poggiomarino, Napoli</div>
+      <div class="footer__social">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+        <a href="https://wa.me/393793166468" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
